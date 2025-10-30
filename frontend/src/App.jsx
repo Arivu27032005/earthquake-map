@@ -41,7 +41,7 @@ function App() {
           />
 
           {/* Loop through earthquake data and create markers */}
-          {earthquakes.map((eq) => (
+          {earthquakes?.map((eq) => (
             <Marker
               key={eq.id} // Unique key for each marker
               position={[
