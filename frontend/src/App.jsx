@@ -10,7 +10,7 @@ function App() {
   // Fetch earthquake data when component mounts
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/earthquakes") // Call our backend API
+      .get("/api/earthquakes") // Call our backend API
       .then((res) => setEarthquakes(res.data.features)) // Store earthquake features
       .catch((err) => console.log(err)); // Log any errors
   }, []);
